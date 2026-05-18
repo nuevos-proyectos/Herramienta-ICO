@@ -49,6 +49,7 @@ app.post('/extraer-primera-pagina', upload.none(), async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+// Agregamos '0.0.0.0' para que Railway detecte el puerto correctamente y no mate el proceso
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Auditor Digital corriendo en puerto ${PORT}`);
 });
