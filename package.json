@@ -1,0 +1,14 @@
+{
+  "name": "xls-extractor-api",
+  "version": "1.0.0",
+  "description": "API para extraer la primera hoja y devolver un archivo Excel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  }
+}
